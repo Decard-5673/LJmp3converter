@@ -1,0 +1,22 @@
+Package: LJmp3converter
+Type: Package
+Title: Convert Video Files to MP3 Format
+Version: 0.1.0
+Authors@R: 
+    person("Lijin", "Arakkandathil Thekkathil", , "lijin5673@gmail.com", role = c("aut", "cre"))
+Description: An R package that extracts audio from video files and converts them into MP3 format.
+    Useful for media processing, podcast extraction, and audio archiving.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: 
+    shiny, 
+    fs, 
+    tools,
+    shinyFiles
+Suggests: 
+    testthat, 
+    knitr, 
+    rmarkdown
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
