@@ -2,3 +2,7 @@
 
 export(download_ffmpeg)
 export(run_converter_app)
+importFrom(utils,download.file)
+importFrom(utils,install.packages)
+importFrom(utils,installed.packages)
+importFrom(utils,unzip)

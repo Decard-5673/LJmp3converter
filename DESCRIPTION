@@ -1,22 +1,23 @@
 Package: LJmp3converter
 Type: Package
-Title: Convert Video Files to MP3 Format
-Version: 0.1.0
+Title: Convert Video Files to MP3 Format using 'FFmpeg'
+Version: 1.0.5
 Authors@R: 
     person("Lijin", "Arakkandathil Thekkathil", , "lijin5673@gmail.com", role = c("aut", "cre"))
-Description: An R package that extracts audio from video files and converts them into MP3 format.
-    Useful for media processing, podcast extraction, and audio archiving.
-License: MIT + file LICENSE
+Description: Converts video files to 'MP3' using 'FFmpeg', which is dynamically downloaded to avoid bundling any third-party binaries. Users must ensure compliance with the license terms of 'FFmpeg' when using the package. See <https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip> for details.
+License: GPL-3
 Encoding: UTF-8
 Depends: R (>= 3.5.0)
 Imports: 
-    shiny, 
-    fs, 
+    fs,
     tools,
-    shinyFiles
+    utils,
+    rstudioapi,
+    httr
 Suggests: 
-    testthat, 
-    knitr, 
+    testthat (>= 3.0.0),
+    knitr,
     rmarkdown
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
+Config/testthat/edition: 3

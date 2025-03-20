@@ -2,14 +2,14 @@
 % Please edit documentation in R/download_ffmpeg.R
 \name{download_ffmpeg}
 \alias{download_ffmpeg}
-\title{Download and Set Up FFmpeg}
+\title{Download and Set Up 'FFmpeg'}
 \usage{
 download_ffmpeg()
 }
 \value{
-A string containing the path to the downloaded FFmpeg executable.
+A string containing the path to the downloaded 'FFmpeg' executable.
 }
 \description{
-This function downloads the latest FFmpeg executable and sets it up for the user.
-It ensures compliance with MIT licensing by not bundling FFmpeg within the package.
+This function downloads the latest 'FFmpeg' executable and sets it up for the user.
+It ensures compliance with MIT licensing by not bundling 'FFmpeg' within the package.
 }

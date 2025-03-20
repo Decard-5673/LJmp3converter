@@ -1,0 +1,19 @@
+Package: LJmp3converter
+Version: 1.0.5
+
+## Summary of Changes in Version 1.0.4:
+- Removed dependency on `shiny` and replaced it with `rstudioapi` and `utils` for file selection.
+- Ensured compliance with CRAN policies:
+  - Added the required web service URL (`<https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip>`) in `DESCRIPTION`.
+  - Documented return values for exported functions (e.g., added `@return` in `run_converter_app.R` and `download_ffmpeg.R`).
+  - Replaced `installed.packages()` with `requireNamespace()` to avoid performance issues.
+  - Removed package installation within functions (`install.packages()` calls).
+  - Ensured all options are restored using `on.exit()` (e.g., `options(timeout = 3000)`).
+- Updated `NEWS.md`, `README.md`, and `cran-comments.md` accordingly.
+
+## Notes for CRAN Reviewers:
+This resubmission addresses all feedback received in the previous CRAN review:
+- `shiny` is fully removed, and the package now works with `rstudioapi` and `utils` for folder selection.
+- All CRAN compliance issues (documentation, function behavior, and package dependencies) have been resolved.
+- The package was tested on multiple environments, including Windows 11, Debian (r-devel), and `win-builder`.
+
