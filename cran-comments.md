@@ -1,3 +1,32 @@
+## Resubmission: LJmp3converter 1.0.7
+
+### Changes Made Based on CRAN Feedback:
+
+**Fixed Documentation Issues**  
+   - Removed the incorrectly formatted "The package includes" section from the DESCRIPTION file to comply with CRAN formatting requirements.
+
+---
+
+# CRAN Submission Comments for LJmp3converter 1.0.6
+
+## Submission Summary:
+- This update introduces two new functions:
+  - `merge_mp3()` for merging multiple audio files into a single 'MP3'.
+  - `trim_audio()` for trimming audio files based on user-defined start and end times, with an option to choose the output format.
+- Documentation has been updated for consistency with CRAN guidelines.
+
+## Reverse Dependencies:
+- There are no reverse dependencies for this package.
+
+## CRAN Policy Compliance:
+- This update follows all CRAN guidelines.
+- No breaking changes were introduced.
+- The package has been tested thoroughly.
+
+Thank you for reviewing this submission!
+
+---
+
 ## Resubmission: LJmp3converter 1.0.5
 
 ### Changes Made Based on CRAN Feedback:
@@ -25,3 +54,4 @@
    - Verified that all tests pass successfully on Windows. 
 
 This submission addresses all CRAN review comments.
+
